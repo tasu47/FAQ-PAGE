@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(10, 123, 184);
+}
+.main{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+  margin-top: 7%;
+  box-shadow: 1px 1px 7px 2px #beb8b857;
+  border-radius: 3px;
+  padding: 30px;
+}
+ .main .logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+.main .logo .help a,
+.log a{
+text-decoration: none;
+font-weight:bold ;
+color:  rgb(10, 123, 184);
+}
+.main .logo .log{
+    display: flex;
+    gap: 24px;
+    text-align: center;
+    align-items: center;
+}
+button{
+    background-color: rgb(10, 123, 184);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    align-items: center;
+}
+.main .heading{
+    align-items: center;
+    text-align: center;
+    padding-top: 6%;
+}
+.main .heading h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main .heading .input {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.main .heading .input input{
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 25%;
+    padding: 10px;
+    outline: none;
+    box-shadow: 1px 1px 7px 2px #beb8b857;
+}
+.main .heading .input  img{
+
+height:36px;
+width: 35px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.main .grid{
+   margin-top: 10px;
+    display: flex;
+   padding: 20px;
+   gap: 10px;
+   margin-top: 40px;
+   padding-bottom: 60px;
+}
+.main .grid .box{
+    height: 190px;
+    width: 180px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px 2px #beb8b857;
+    text-align: center;
+
+}
+.main .grid .box h4{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.main .grid .box img {
+height: 140px;
+  width: 140px;
+  
+}
+@media screen and (max-width: 600px) {
+    
+    .main .logo{
+        font-size: 13px;
+    }
+    .main .heading .input input{
+        width: 60%;
+    }
+    .main .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .main .grid .box{
+        width: 120px;
+        height: 110px;
+    }
+    .main .grid .box img {
+        height: 60px;
+          width: 60px;
+          
+        }
+        .main .grid .box h4{
+            font-size: 13px;
+        }
+}
